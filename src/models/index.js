@@ -9,7 +9,7 @@ const config_1 = require("../../config");
 const data_1 = __importDefault(require("./data"));
 const { database } = config_1.$db;
 const password = process.env.PASSWORD;
-const url = `mongodb+srv://sbm:1P3um0K8vrnzOxWb@main.kw3r3.mongodb.net/easy-shop?retryWrites=true&w=majority`;
+const url = `mongodb+srv://sbm:${password}@main.kw3r3.mongodb.net/easy-shop?retryWrites=true&w=majority`;
 const connect = mongoose_1.default.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose_1.default.set('useFindAndModify', false);
 const db = mongoose_1.default.connection;
