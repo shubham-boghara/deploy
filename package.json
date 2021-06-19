@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node src/index.js",
-    "lint": "eslint . --ext .js,.tsx,.ts",
-    "lint:fix": "eslint . --fix --ext .js,.tsx,.ts",
-    "test": "jest src"
+    "build": "tsc -p ."
   },
   "author": "",
   "license": "ISC",
