@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev src/index.ts",
     "start": "ts-node src/index.js",
-    "build": "tsc -p .",
     "lint": "eslint . --ext .js,.tsx,.ts",
     "lint:fix": "eslint . --fix --ext .js,.tsx,.ts",
     "test": "jest src"
